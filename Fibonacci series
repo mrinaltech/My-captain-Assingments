@@ -1,0 +1,12 @@
+n=int(input("Enter a number= "))
+f=0                                         #first element of series
+s=1                                         #second element of series
+if n<=0:
+    print("The series is",f)
+else:
+    print(f,s,end=" ")
+    for x in range(2,n):
+        next=f+s                           
+        print(next,end=" ")
+        f=s
+        s=next
