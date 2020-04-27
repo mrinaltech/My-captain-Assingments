@@ -22,7 +22,7 @@ X_train,x_test,y_train,y_test=train_test_split(df_x,df_y,test_size=0.2,random_st
 x_train.head()
 y_train.head()
 #call rf classifier
-rf=RandpnForestClassifieer(n_estimator=100)
+rf=RandomForestClassifier(n_estimator=100)
 #fit the model
 rf.fit(x_train,y_train)
 #prediction
